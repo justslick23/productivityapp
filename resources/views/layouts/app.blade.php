@@ -22,6 +22,7 @@
 <!-- End plugin css for this page -->
 <!-- Injected CSS -->
 <link rel="stylesheet" href="{{ asset('css/vertical-layout-light/style.css') }}">
+
 <!-- End injected CSS -->
 <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
 

@@ -15,10 +15,10 @@
                 <div class="card">
                     <div class="card-body">
                     <div class="card-body d-flex justify-content-between align-items-center">
-                        <h4 class="card-title">Client Table</h4>
+                        <h4 class="card-title">Projects Table</h4>
                         <!-- Add Client Button -->
                         <div>
-                            <a href="{{ route('clients.create') }}" class="btn btn-primary">Add Client</a>
+                            <a href="{{ route('projects.create') }}" class="btn btn-primary">Add Project</a>
                         </div>
 
                      
@@ -34,16 +34,34 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Contact Person</th>
+                                        <th>Project Name</th>
+                                        <th>Project Type</th>
+                                        <th>Client</th>
+                                        <th>Project Start Date</th>
+                                        <th>Project  End Date</th>
+                                        <th>Action</th> <!-- New column for action buttons -->
+
+
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($clients as $client)
+                                    @foreach ($projects as $project)
                                         <tr>
-                                            <td>{{ $client->id }}</td>
-                                            <td>{{ $client->name }}</td>
-                                            <td>{{ $client->contact_person }}</td>
+                                            <td>{{ $project->id }}</td>
+                                            <td>{{ $project->name }}</td>
+                                            <td>{{ $project->project_type }}</td>
+
+                                            <td>{{ $project->client->name}}</td>
+                                            <td>{{ $project->start_date}}</td>
+                                            <td>{{ $project->end_date}}</td>
+                                            <td>
+                                            <form action="{{ route('projects.destroy', $project->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this project?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>

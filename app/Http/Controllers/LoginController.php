@@ -31,7 +31,7 @@ class LoginController extends Controller
         // Attempt to authenticate the user
         if (Auth::attempt($credentials)) {
             // Authentication successful
-            return redirect()->intended('/dashboard');
+            return redirect()->route('home');
         }
 
         // Authentication failed

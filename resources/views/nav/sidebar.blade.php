@@ -1,23 +1,24 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('dashboard') }}">
+            <a class="nav-link" href="{{ route('home') }}">
                 <i class="mdi mdi-view-dashboard menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/tasks">
                 <i class="mdi mdi-format-list-bulleted menu-icon"></i>
                 <span class="menu-title">Tasks</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="mdi mdi-projector-screen-outline menu-icon"></i>
-                <span class="menu-title">Projects</span>
-            </a>
-        </li>
+    <a class="nav-link" href="/projects">
+        <i class="mdi mdi-folder menu-icon"></i>
+        <span class="menu-title">Projects</span>
+    </a>
+</li>
+
         <li class="nav-item">
             <a class="nav-link" href="/clients">
                 <i class="mdi mdi-account-multiple-outline menu-icon"></i>
