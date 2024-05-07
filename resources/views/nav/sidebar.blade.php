@@ -19,7 +19,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/clients">
                 <i class="mdi mdi-account-multiple-outline menu-icon"></i>
                 <span class="menu-title">Clients</span>
             </a>
