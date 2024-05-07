@@ -1,0 +1,210 @@
+      /* Custom CSS styles */
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .register-container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .register-form {
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        width: 100%;
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* public/css/sidebar-styles.css */
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar-menu li:last-child {
+    border-bottom: none;
+}
+
+/* resources/css/sidebar.css */
+
+.sidebar .sidebar-menu li a {
+    display: block;
+    padding: 10px 15px; /* Adjust padding as needed */
+    color: white; /* Example text color */
+    text-decoration: none;
+}
+
+.sidebar .sidebar-menu li a:hover {
+    background-color: #f0f0f0; /* Example hover background color */
+}
+
+/* CSS code for collapsed state */
+.sidebar.collapsed {
+    width: 50px; /* Adjust width as needed */
+}
+
+.sidebar.collapsed .sidebar-menu li a {
+    padding: 15px 10px; /* Adjust padding to center icons vertically */
+}
+
+.sidebar.collapsed .sidebar-menu li a i {
+    margin-right: 0; /* Hide text labels, adjust icon spacing */
+}
+
+
+/* resources/css/dashboard.css */
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Distribute items evenly along the main axis */
+}
+
+.box {
+    flex: 1; /* Equal width for all boxes */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.box h3 {
+    margin-top: 0;
+}
+
+
