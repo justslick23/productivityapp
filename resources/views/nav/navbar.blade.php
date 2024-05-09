@@ -6,7 +6,8 @@
           </button>
         </div>
         <div>
-         <h4>Productivity App by slkstr</h4>
+        <img src="{{asset ('/images/logo.png')}}" style = "width: 150%" alt="logo">
+
         </div>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-top"> 

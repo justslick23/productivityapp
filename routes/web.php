@@ -21,7 +21,7 @@ use App\Http\Controllers\ReportController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
